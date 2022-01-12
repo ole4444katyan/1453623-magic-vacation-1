@@ -242,15 +242,15 @@
     color: inherit;
     padding: 0 0.5em 0.5em;
 
-    &::after {
+    &::after,
+    &::before {
       content: "";
       position: absolute;
       bottom: 0;
-      width: 100%;
+      width: 0;
       height: 2px;
       background-color: $c-light;
-      display: none;
-      left: 0;
+
 
       @media (max-width: $tablet) and (orientation: portrait) {
         left: 0;
@@ -265,9 +265,20 @@
       }
     }
 
+    &::after {
+      left: 0;
+    }
+
+    &::before {
+      right: 0;
+      transition: width .3s;
+    }
+
+
     &.active {
       &::after {
         display: block;
+        width: 100%;
       }
     }
 
@@ -276,9 +287,22 @@
       color: $c-purple;
       outline: none;
 
-      &::after {
+      &::after,
+      &::before {
+        display: block;
         opacity: 1;
+      }
+
+      &::after {
+        width: 100%;
         background-color: $c-purple;
+        transition: width .3s;
+      }
+
+      &::before {
+        width: 100%;
+        background-color: $c-purple;
+        transition: width 0s ease .3s;
       }
     }
   }
