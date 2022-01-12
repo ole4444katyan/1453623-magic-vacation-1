@@ -5,6 +5,23 @@
     .social-block__list {
       opacity: 1;
       pointer-events: auto;
+
+      & li {
+        opacity: 1;
+        transition: opacity 500ms;
+
+       &:nth-child(1) {
+        transition-delay: 50ms;
+      }
+
+       &:nth-child(2) {
+        transition-delay: 150ms;
+      }
+
+       &:nth-child(3) {
+        transition-delay: 250ms;
+      }
+      }
     }
   }
 }
@@ -17,6 +34,7 @@
   height: 4rem;
   color: $c-dark;
   border-radius: 50%;
+  transition: all .2s;
 
   @media (max-width: $tablet) and (orientation: portrait) {
     display: none;
@@ -145,6 +163,7 @@
   li {
     flex: none;
     margin-bottom: 0.5rem;
+    opacity: 0;
 
     @media (min-width: $stop-scaling) {
       margin-bottom: 5px;
