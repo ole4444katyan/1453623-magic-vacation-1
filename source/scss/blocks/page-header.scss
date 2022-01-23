@@ -20,10 +20,34 @@
 }
 
 .page-header__wrapper {
-  @include container;
+  margin: 0 auto;
+  padding-right: 4rem;
+  width: 100%;
+  padding-left: 0;
+
+  .active-body & {
+    @include container;
+  }
+
+  @media (min-width: $stop-scaling) {
+    padding-right: 40px;
+    padding-left: 0;
+  }
+
+  @media (max-width: $tablet) and (orientation: portrait) {
+    padding-right: 1rem;
+    padding-left: 0;
+  }
+
+  @media (max-width: $mobile) and (orientation: landscape) {
+    padding-right: 1rem;
+    padding-left: 0;
+  }
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: padding-left .6s cubic-bezier(0, 1, 1, 1);
 }
 
 .page-header__logo {
@@ -35,6 +59,12 @@
   padding: 1rem 0;
   width: 10rem;
   color: $c-light;
+  opacity: 0;
+  transition: opacity .6s cubic-bezier(0, 1, 1, 1);
+
+  .active-body & {
+    opacity: 1;
+  }
 
   @media (min-width: $stop-scaling) {
     top: -5px;
