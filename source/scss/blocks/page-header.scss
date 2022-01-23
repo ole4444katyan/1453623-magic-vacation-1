@@ -207,6 +207,12 @@
   font-size: 1.2rem;
   line-height: 1.0418;
   color: $c-light;
+  opacity: 0;
+  transition: opacity .6s cubic-bezier(0, 1, 1, 1);
+
+  .active-body & {
+    opacity: 1;
+  }
 
   @media (min-width: $stop-scaling) {
     font-size: 12px;
@@ -308,7 +314,15 @@
     &.active {
       &::after {
         display: block;
-        width: 100%;
+        width: 0;
+        transition: width .6s cubic-bezier(0, 1, 1, 1);
+      }
+
+      .active-body & {
+        &::after {
+          display: block;
+          width: 100%;
+        }
       }
     }
 
