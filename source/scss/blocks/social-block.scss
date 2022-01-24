@@ -34,7 +34,12 @@
   height: 4rem;
   color: $c-dark;
   border-radius: 50%;
-  transition: all .2s;
+  transition: transform .6s cubic-bezier(0,1,1,1);
+  transform: scale(0,0);
+
+  .loaded & {
+    transform: scale(1,1);
+  }
 
   @media (max-width: $tablet) and (orientation: portrait) {
     display: none;
