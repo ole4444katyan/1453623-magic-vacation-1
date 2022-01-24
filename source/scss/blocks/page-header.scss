@@ -25,7 +25,7 @@
   width: 100%;
   padding-left: 0;
 
-  .active-body & {
+  .loaded & {
     @include container;
   }
 
@@ -62,7 +62,7 @@
   opacity: 0;
   transition: opacity .6s cubic-bezier(0, 1, 1, 1);
 
-  .active-body & {
+  .loaded & {
     opacity: 1;
   }
 
@@ -210,7 +210,7 @@
   opacity: 0;
   transition: opacity .6s cubic-bezier(0, 1, 1, 1);
 
-  .active-body & {
+  .loaded & {
     opacity: 1;
   }
 
@@ -318,7 +318,7 @@
         transition: width .6s cubic-bezier(0, 1, 1, 1);
       }
 
-      .active-body & {
+      .loaded & {
         &::after {
           display: block;
           width: 100%;
