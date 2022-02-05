@@ -311,10 +311,10 @@
 .screen--closer {
   bottom: 0;
   width: 100%;
-  background-color: #000;
+  background-color: $c-dark;
   display: flex;
   position: absolute;
-  transition: height 1s;
+  transition: height 500ms;
   z-index: 2;
 }
 
