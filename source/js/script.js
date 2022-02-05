@@ -9,6 +9,7 @@ import form from './modules/form.js';
 import social from './modules/social.js';
 import FullPageScroll from './modules/full-page-scroll';
 import loadListener from './modules/load-listener.js';
+import prizesOpener from './modules/prizes-opener.js';
 
 // init modules
 mobileHeight();
@@ -20,6 +21,7 @@ result();
 form();
 social();
 loadListener();
+prizesOpener();
 
 const fullPageScroll = new FullPageScroll();
 fullPageScroll.init();
