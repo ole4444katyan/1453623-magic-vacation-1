@@ -1,3 +1,5 @@
+@import 'general/keyframes';
+
 .rules {
   position: relative;
   flex-grow: 1;
@@ -160,6 +162,11 @@
     line-height: 5rem;
     text-align: center;
 
+    animation-name: rules-bullets;
+    animation-duration: .3s;
+    animation-fill-mode: backwards;
+    animation-timing-function: cubic-bezier(.5,0,.5,1.5);
+
     @media (max-width: $tablet) and (orientation: portrait) {
       top: 1rem;
       width: 2.5rem;
@@ -177,12 +184,43 @@
     }
   }
 
+  &:nth-child(2)::before {
+    animation-delay: .2s;
+  }
+
+  &:nth-child(3)::before {
+    animation-delay: .4s;
+  }
+
+  &:nth-child(4)::before {
+    animation-delay: .6s;
+  }
+
   p {
     margin: 0;
+
+    animation-name: rules-paragraphs;
+    animation-duration: .45s;
+    animation-delay: .1s;
+    animation-fill-mode: backwards;
+    animation-timing-function: cubic-bezier(.1,.15,.15,1);
+
 
     @media (max-width: $tablet) and (orientation: portrait) {
       min-height: calc(1.4rem * 2.2);
     }
+  }
+
+  &:nth-child(2) p {
+    animation-delay: .2s;
+  }
+
+  &:nth-child(3) p {
+    animation-delay: .4s;
+  }
+
+  &:nth-child(4) p {
+    animation-delay: .6s;
   }
 }
 

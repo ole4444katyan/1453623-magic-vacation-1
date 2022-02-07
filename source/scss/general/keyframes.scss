@@ -1,0 +1,21 @@
+@keyframes rules-bullets {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes rules-paragraphs {
+  from {
+    opacity: 0;
+    transform: translateX(15px)
+  }
+
+  to {
+    opacity: 1;
+  }
+}
