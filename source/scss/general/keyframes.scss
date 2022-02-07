@@ -19,3 +19,25 @@
     opacity: 1;
   }
 }
+
+@keyframes rules-button {
+  from {
+    opacity: 1;
+    max-width: 0;
+  }
+
+  to {
+    opacity: 1;
+    max-width: 100%;
+  }
+}
+
+@keyframes rules-button-text {
+  from {
+    color: transparent;
+  }
+
+  to {
+    color: $c-dark;
+  }
+}
