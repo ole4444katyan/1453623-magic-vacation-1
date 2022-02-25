@@ -3,6 +3,7 @@
     transform: scale(0);
     opacity: 0;
   }
+
   to {
     transform: scale(1);
     opacity: 1;
@@ -39,5 +40,15 @@
 
   to {
     color: $c-dark;
+  }
+}
+
+@keyframes letters {
+  from {
+    transform: translate3d(0, 120%, 0);
+  }
+
+  to {
+    transform: translate(0%);
   }
 }
