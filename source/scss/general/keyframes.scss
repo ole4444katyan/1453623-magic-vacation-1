@@ -3,6 +3,7 @@
     transform: scale(0);
     opacity: 0;
   }
+
   to {
     transform: scale(1);
     opacity: 1;
@@ -40,4 +41,171 @@
   to {
     color: $c-dark;
   }
+}
+
+@keyframes letters {
+  from {
+    transform: translate3d(0, 120%, 0);
+  }
+
+  to {
+    transform: translate(0%);
+  }
+}
+
+@keyframes flamingo {
+  from {
+    transform: translateY(100%) ;
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes flamingo-infinite {
+  from {
+    transform:  rotate();
+  }
+
+  50% {
+    transform: translate3d(-2%, 5%, 0) rotate(-5deg);
+  }
+
+  to {
+    transform:  rotate();
+  }
+}
+
+@keyframes suitcase {
+  from {
+    transform: translate3d(0, 40%, 0) scale(0) rotate(-7deg);
+  }
+
+  66% {
+    transform: translate3d(1%, -5%, 0) scale(1);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes leaf-blue1 {
+  from {
+    transform: translate3d(-10%, -20%, 0) rotate(-15deg);
+    opacity: 0;
+  }
+
+  11% {
+    transform: translate3d(2%, 3%, 0) rotate(3deg);
+    opacity: 1;
+  }
+
+  30% {
+    transform: translate3d(-6%, -12%, 0) rotate(-10deg);
+  }
+
+  48% {
+    transform: translate3d(1%, 2%, 0) rotate(2deg);
+  }
+
+  80% {
+    transform: translate3d(-3%, -6%, 0) rotate(-5deg);
+  }
+
+  90% {
+    transform: translate3d(0.5%, 1%, 0) rotate(1deg);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+}
+
+@keyframes leaf-blue2 {
+  from {
+    transform: translate3d(5%, -35%, 0) rotate(40deg);
+    opacity: 0;
+  }
+
+  16% {
+    transform: translate3d(-2%, 3%, 0) rotate(0deg);
+    opacity: 1;
+  }
+
+  35% {
+    transform: translate3d(3.25%, -8.5%, 0) rotate(10deg);
+  }
+
+  53% {
+    transform: translate3d(-1%, 2%, 0) rotate(0deg);
+  }
+
+  71% {
+    transform: translate3d(1.5%, -2.5%, 0) rotate(3deg);
+  }
+
+  91% {
+    transform: translate3d(-0.5%, 1%, 0) rotate(0deg);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes leaf-green {
+  from {
+    transform: translate3d(-5%, -15%, 0) rotate(-15deg);
+    opacity: 0;
+  }
+
+  15% {
+    transform: rotate(2deg);
+  }
+
+  36% {
+    transform: rotate(-7deg);
+  }
+
+  57% {
+    transform: rotate(1.5deg);
+  }
+
+  69% {
+    transform: rotate(-3deg);
+  }
+
+  86% {
+    transform: rotate(1deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes form__button {
+  from {
+    opacity: 0;
+   }
+
+   to {
+    opacity: 1;
+   }
+}
+
+@keyframes form__field {
+  from {
+    width: calc(0% - 31rem);
+   }
+
+   to {
+    width: calc(100% - 31rem);
+   }
 }

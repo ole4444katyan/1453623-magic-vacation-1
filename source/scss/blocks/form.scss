@@ -31,16 +31,13 @@
 }
 
 .form__field {
-  width: calc(0% - 21rem);
-  transition: width .5s;
-}
-
-.active .form__field {
   flex: none;
   margin-right: 3rem;
   padding: 0 5.6rem;
   height: 6rem;
-  width: calc(100% - 21rem);
+
+  width: calc(0% - 21rem);
+
   text-transform: uppercase;
   font: inherit;
   font-size: 2.4rem;
@@ -49,6 +46,12 @@
   border: 0;
   border-radius: 3rem;
   outline: none;
+
+  transition: width .5s;
+}
+
+.active .form__field {
+  width: calc(100% - 21rem);
 
   &:focus {
     border: 1px solid $c-purple;
@@ -87,6 +90,8 @@
 .form__button {
   flex-grow: 1;
   max-width: 180px;
+
+  animation: form__button .3s;
 
   @media (orientation: portrait) {
     position: relative;
@@ -135,6 +140,9 @@
 .form--result {
   .form__field {
     width: calc(100% - 31rem);
+
+    animation: form__field .7s;
+    animation-fill-mode: both;
 
     @media (min-width: $stop-scaling) {
       width: calc(100% - 310px);
