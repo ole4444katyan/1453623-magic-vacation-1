@@ -2,6 +2,9 @@
   color: $c-dark;
   background-color: $c-light;
 
+  animation: to-transparent 1s;
+  animation-fill-mode: both;
+
   @media (max-width: $tablet) and (orientation: portrait) {
     font-weight: 400;
     color: $c-light;

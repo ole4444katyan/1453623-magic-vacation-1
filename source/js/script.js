@@ -11,6 +11,7 @@ import FullPageScroll from './modules/full-page-scroll';
 import loadListener from './modules/load-listener.js';
 import prizesOpener from './modules/prizes-opener.js';
 import {animationPreparer} from './modules/animation.js';
+import footerAnimation from './modules/footer-animation.js';
 
 // init modules
 mobileHeight();
@@ -24,6 +25,7 @@ social();
 loadListener();
 prizesOpener();
 animationPreparer();
+footerAnimation();
 
 const fullPageScroll = new FullPageScroll();
 fullPageScroll.init();
