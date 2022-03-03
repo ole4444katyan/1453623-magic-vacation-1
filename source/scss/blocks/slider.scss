@@ -156,6 +156,9 @@
   width: 17rem;
   z-index: 1;
 
+  animation: opacity .4s;
+  animation-fill-mode: both;
+
   @media (min-width: $stop-scaling) {
     bottom: 28px;
     width: 170px;
@@ -180,6 +183,16 @@
   @media (min-width: $stop-scaling) {
     width: 40px;
     height: 40px;
+  }
+
+  &--prev {
+    animation: roll-right .4s;
+    animation-fill-mode: both;
+  }
+
+  &--next {
+    animation: roll-left .4s;
+    animation-fill-mode: both;
   }
 
   &::before {
@@ -254,6 +267,9 @@
   font-weight: 400;
   font-size: 2.4rem;
   line-height: 4rem;
+
+  animation: opacity .4s;
+  animation-fill-mode: both;
 
   @media (min-width: $stop-scaling) {
     bottom: 28px;
