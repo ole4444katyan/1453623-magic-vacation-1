@@ -141,6 +141,7 @@
   }
 
   .page-header--menu-opened & {
+
     &::before,
     &::after {
       top: 50%;
@@ -212,6 +213,54 @@
 
   .loaded & {
     opacity: 1;
+  }
+
+  .link--purple & {
+    a {
+
+      &:hover,
+      &:focus {
+        color: $c-purple;
+
+        &::after,
+        &::before {
+          background-color: $c-purple;
+        }
+      }
+    }
+
+  }
+
+  .link--blue & {
+    a {
+
+      &:hover,
+      &:focus {
+        color: $c-blue;
+
+        &::after,
+        &::before {
+          background-color: $c-blue;
+        }
+      }
+    }
+
+  }
+
+  .link--light-blue & {
+    a {
+
+      &:hover,
+      &:focus {
+        color: $c-light-blue;
+
+        &::after,
+        &::before {
+          background-color: $c-light-blue;
+        }
+      }
+    }
+
   }
 
   @media (min-width: $stop-scaling) {

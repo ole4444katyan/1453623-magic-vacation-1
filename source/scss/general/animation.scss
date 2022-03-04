@@ -192,3 +192,20 @@
     }
   }
 }
+
+
+.footer-closer {
+  animation: footer-close .2s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0, 1, 1, 1);
+}
+
+.from-transparent {
+  animation: from-transparent 1s;
+  animation-fill-mode: both;
+}
+
+.to-transparent {
+  animation: to-transparent 1s;
+  animation-fill-mode: both;
+}

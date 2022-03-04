@@ -178,6 +178,8 @@
   font-size: 2.4rem;
   line-height: 1.2;
   color: $c-light;
+  animation: opacity .4s;
+  animation-fill-mode: both;
 
   @media (min-width: $stop-scaling) {
     margin: auto auto 10px;
@@ -210,6 +212,8 @@
     width: 4rem;
     height: 4rem;
     color: $c-dark;
+    animation: roll-left .4s;
+    animation-fill-mode: both;
 
     @media (min-width: $stop-scaling) {
       margin-left: 15px;
