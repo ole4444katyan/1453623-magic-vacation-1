@@ -1,16 +1,85 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 350 330">
-
   <g>
     <animateTransform
+    xlink:href="#translate_chair"
     attributeName="transform"
     type="translate"
     from="-100"
     to="0"
     fill="freeze"
     dur="0.5s"
+    begin = "2.7s"
     >
     </animateTransform>
+    <animate
+        xlink:href="#window_line"
+        attributeName="d"
+        from="m 204.61576,241.61534 h -2.83764 a 2.9154912,2.4053561 0 0 1 -2.90223,-2.40262 v -5.17289 a 2.9154912,2.4053561 0 0 1 2.90223,-2.40262 h 2.83764 a 2.9154912,2.4053561 0 0 1 2.90058,2.40262 v 5.17015 a 2.9171477,2.4067228 0 0 1 -2.90058,2.40536 z"
+        to="M275,225.43H257.87a17.6,17.6,0,0,1-17.52-17.58V170a17.6,17.6,0,0,1,17.52-17.58H275A17.6,17.6,0,0,1,292.51,170v37.83A17.61,17.61,0,0,1,275,225.43Z"
+        begin="cabin_window_big.begin"
+        dur="1s"
+        fill="freeze"
+    >
+    </animate>
 
+    <animateTransform
+          xlink:href="#cloud1_chair"
+          attributeName="transform"
+          type="translate"
+          from="72, 0"
+          to="-250, 0"
+          fill="freeze"
+          dur="3s"
+
+          repeatCount="indefinite">
+        </animateTransform>
+
+
+        <animateTransform
+          xlink:href="#cloud2_chair"
+          attributeName="transform"
+          type="translate"
+          from="0,0"
+          to="-250,0"
+          fill="freeze"
+
+          dur="3s"
+          repeatCount="indefinite"
+          >
+        </animateTransform>
+        <animateTransform
+        xlink:href="#leaf"
+        attributeName="transform"
+        type="rotate"
+        values="-9; 4; -7; 1; 0"
+        keyTimes="0; 0.25; 0.5; 0.75; 1"
+        calcMode="spline"
+        keySplines="0.37, 0, 0.63, 1;
+                    0.37, 0, 0.63, 1;
+                    0.37, 0, 0.63, 1;
+                    0.37, 0, 0.63, 1"
+        dur="2.5s"
+
+      >
+      </animateTransform>
+      <animateTransform
+        xlink:href="#leaf"
+        attributeName="transform"
+        type="rotate"
+        values="0; -3; 0"
+        keyTimes="0; 0.5; 1"
+        calcMode="spline"
+        keySplines="0.37, 0, 0.63, 1;
+                    0.37, 0, 0.63, 1"
+        dur="1.5s"
+        fill="freeze"
+        additive="sum"
+        begin="1.75s"
+        repeatCount="indefinite"
+      >
+      </animateTransform>
+
+  </g>
+  <g id="translate_chair">
     <defs>
       <clipPath id="window">
         <path
@@ -18,18 +87,6 @@
       </clipPath>
     </defs>
     <g id="ski">
-      <animate
-        attributeType="CSS"
-        attributeName="opacity"
-        from="0"
-        to="1"
-        dur="0.5s"
-        keySplines="0,0,0.9,1"
-        begin="0.2"
-        fill="freeze"
-      >
-      </animate>
-
       <path
         d="M91.14,327.79a2.2,2.2,0,0,1-2-2.36l13.66-193.17c1.1-15.49-4.8-21.92-8.75-24.47a1.35,1.35,0,0,1,.53-2.45C103,104,122.18,104,120,134.19L106.43,326.67a2.2,2.2,0,0,1-2.35,2Z"
         fill="#fff" />
@@ -37,44 +94,27 @@
         d="M124.5,328.17a2.2,2.2,0,0,1-2.17-2.23l2.24-193.63c0.19-15.53-6.07-21.61-10.16-23.91a1.35,1.35,0,0,1,.39-2.47c8.36-1.9,27.49-3,27.15,27.28l-2.25,192.93a2.2,2.2,0,0,1-2.22,2.18Z"
         fill="#fff" />
     </g>
-
     <g clip-path="url(#window)">
       <g transform="translate(220 160)">
-        <g>
-          <animateTransform
-          attributeName="transform"
-          type="translate" from="220, 0"
-          to="-200, 0"
-          fill="freeze"
-          dur="2s"
-          repeatCount="indefinite">
-          </animateTransform>
-          <line id="cloud_line" x1="28.18" y1="38.34" x2="91.09" y2="38.34" fill="none" stroke="#fff"
+        <g id="cloud1_chair">
+          <line x1="28.18" y1="38.34" x2="91.09" y2="38.34" fill="none" stroke="#fff"
             stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" />
-          <path id="cloud_path" d="M41.77,97.54H77.06a12.4,12.4,0,1,1,24.8,0h17.93" transform="translate(-40.77 -69.46)"
+          <path d="M41.77,97.54H77.06a12.4,12.4,0,1,1,24.8,0h17.93" transform="translate(-40.77 -69.46)"
             fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" />
         </g>
-        <g>
-          <line id="" x1="218.19" y1="23.72" x2="257.97" y2="23.72" fill="none" stroke="#fff" stroke-linecap="round"
+        <g id="cloud2_chair">
+          <line id="cloud2_chair_line" x1="218.19" y1="23.72" x2="257.97" y2="23.72" fill="none" stroke="#fff" stroke-linecap="round"
             stroke-miterlimit="10" stroke-width="2" />
-          <path d="M278.75,82.91H251.39a12.4,12.4,0,1,0-24.8,0H208.65" transform="translate(-40.77 -69.46)" fill="none"
+          <g id="cloud2_chair_path">
+            <path d="M278.75,82.91H251.39a12.4,12.4,0,1,0-24.8,0H208.65" transform="translate(-40.77 -69.46)" fill="none"
             stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" />
-          <line x1="246.24" y1="13.45" x2="268.43" y2="13.45" fill="none" stroke="#fff" stroke-linecap="round"
+            <line x1="246.24" y1="13.45" x2="268.43" y2="13.45" fill="none" stroke="#fff" stroke-linecap="round"
             stroke-miterlimit="10" stroke-width="2" />
+          </g>
         </g>
       </g>
     </g>
     <g id="chair">
-      <animate
-        attributeType="CSS"
-        attributeName="opacity"
-        from="0"
-        to="1"
-        dur="0.5s"
-        fill="freeze"
-      >
-      </animate>
-
       <path d="M257.5,259.82H196.76V245.63h55.09a9.92,9.92,0,0,1,9.9,9.93,4.26,4.26,0,0,1-4.25,4.25" fill="#a67ee5" />
       <path d="M257.5,259.82H196.76V245.63h55.09a9.92,9.92,0,0,1,9.9,9.93A4.26,4.26,0,0,1,257.5,259.82Z" fill="none"
         stroke="#fff" stroke-miterlimit="10" stroke-width="2" />
@@ -103,27 +143,6 @@
         stroke-miterlimit="10" stroke-width="2" />
     </g>
     <g id="leaf" style="transform-origin: 50% 100%">
-      <animateTransform
-      attributeName="transform"
-      type="rotate"
-      values="-5; 3.5; -2.5; 1"
-      keyTimes="0; 0.33; 0.66; 1"
-      dur="1.5s"
-      fill="freeze"
-      >
-      </animateTransform>
-
-      <animate
-        attributeType="CSS"
-        attributeName="opacity"
-        from="0"
-        to="1"
-        dur="0.5s"
-        begin="0.1"
-        fill="freeze"
-      >
-      </animate>
-
       <path
         d="M79.18,194A131,131,0,0,1,94.77,220.9a255,255,0,0,1-20.08-23.55,259,259,0,0,1-17.07-25.88A131.72,131.72,0,0,1,79.18,194"
         fill="#36e69a" />
@@ -162,60 +181,13 @@
     </g>
 
   </g>
-  <g id="window_line">
+    <path
+    id="window_line"
+      d="M275,225.43H257.87a17.6,17.6,0,0,1-17.52-17.58V170a17.6,17.6,0,0,1,17.52-17.58H275A17.6,17.6,0,0,1,292.51,170v37.83A17.61,17.61,0,0,1,275,225.43Z"
+      fill="none" stroke="#fff" stroke-width="2" />
 
-    <animateTransform
-        xlink:href="#window_line"
-        attributeName="transform"
-        type="translate"
-        values="70,120; 0,0"
-        keyTimes="0;1"
-        fill="freeze"
-        dur="1s"
-        >
-      </animateTransform>
-
-      <animateTransform
-        xlink:href="#window_line"
-        attributeName="transform"
-        type="scale"
-        values="0.5;1"
-        fill="freeze"
-        dur="1s"
-        additive="sum"
-        >
-      </animateTransform>
-
-      <!-- <animateTransform
-        xlink:href="#window_line"
-        attributeName="transform"
-        type="scale"
-        from="0.5"
-        to="1"
-        fill="freeze"
-        dur="1s"
-
-      >
-      </animateTransform>
-
-      <animateTransform
-
-        xlink:href="#window_line"
-        attributeName="transform"
-        type="translate"
-        from="50,150"
-
-        dur="0.5s"
-        fill="freeze"
-        additive="sum"
-        >
-      </animateTransform> -->
-      <path
-        d="M275,225.43H257.87a17.6,17.6,0,0,1-17.52-17.58V170a17.6,17.6,0,0,1,17.52-17.58H275A17.6,17.6,0,0,1,292.51,170v37.83A17.61,17.61,0,0,1,275,225.43Z"
-        fill="none" stroke="#fff" stroke-width="2" />
-    </g>
-    <g id="floor">
+  <g id="floor">
       <line x1="72.03" y1="329" x2="295.52" y2="329" fill="none" stroke="#fff" stroke-linecap="round"
         stroke-miterlimit="10" stroke-width="2" />
-    </g>
-</svg>
+  </g>
+
