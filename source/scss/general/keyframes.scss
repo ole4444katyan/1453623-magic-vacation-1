@@ -240,6 +240,16 @@
   }
 }
 
+@keyframes opacity_from1_to0 {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
 @keyframes footer-close {
   from {
     transform: translateY(0);

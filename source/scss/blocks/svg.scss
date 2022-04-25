@@ -1,0 +1,31 @@
+
+
+
+#cabin_window_small,
+#opacity_dirigible {
+  animation-name: opacity_from1_to0;
+  animation-delay: 2.5s;
+}
+
+#cabin_window_small {
+  animation-duration: 0.001s;
+  animation-fill-mode: both;
+}
+
+#opacity_dirigible {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+
+#window_line {
+  animation-name: opacity;
+  animation-delay: 2.55s;
+  animation-duration: 0.05;
+  animation-fill-mode: both;
+}
+
+
+
+
+
