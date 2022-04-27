@@ -25,7 +25,23 @@
   animation-fill-mode: both;
 }
 
+#suitcase_parachute {
+  transform-origin: 70% 80%;
+}
 
+#leaf_bottom_suitcase {
+  transform-origin: 70% 100%;
+}
+
+#leaf_top_suitcase {
+  transform-origin: 76% 76%;
+}
+
+#secondary_prize {
+  animation-name: opacity;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
 
 
 

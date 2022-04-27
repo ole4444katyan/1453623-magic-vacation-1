@@ -1,0 +1,471 @@
+<svg id="secondary_prize xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 350 330">
+  <g>
+    <set xlink:href="#suitcase_parachute" attributeName="opacity" to="1" begin="cloud_top_suitcase_animate.end + 0.1s"/>
+    <animateTransform xlink:href="#suitcase_parachute"
+              attributeName="transform"
+              type="scale"
+              from="0"
+              to="1"
+              dur="1.6s"
+              begin="cloud_top_suitcase_animate.end + 0.1s"
+              fill="freeze"
+              additive="sum"
+    >
+    </animateTransform>
+    <animateMotion xlink:href="#suitcase_parachute"
+              id="suitcase_parachute_animate"
+              dur="1.6s"
+              begin="cloud_top_suitcase_animate.end + 0.1s"
+              fill="freeze">
+      <mpath
+        href="#suitcase_movement" />
+    </animateMotion>
+    <animateTransform xlink:href="#suitcase_parachute"
+              id="suitcase_parachute_rotate1"
+              attributeName="transform"
+              attributeType="XML"
+              type="rotate"
+              begin="cloud_top_suitcase_animate.end + 0.1s"
+              dur="400ms"
+              from="30"
+              to="-30"
+              keyTimes="0; 1"
+              calcMode="spline"
+              keySplines="0.33 0 0.67 1"
+              additive="sum"
+    >
+    </animateTransform>
+    <animateTransform xlink:href="#suitcase_parachute"
+              id="suitcase_parachute_rotate2"
+              attributeName="transform"
+              attributeType="XML"
+              type="rotate"
+              begin="suitcase_parachute_rotate1.end"
+              dur="367ms"
+              from="-30"
+              to="20"
+              keyTimes="0; 1"
+              calcMode="spline"
+              keySplines="0.33 0 0.67 1"
+              additive="sum"
+    >
+    </animateTransform>
+    <animateTransform xlink:href="#suitcase_parachute"
+              id="suitcase_parachute_rotate3"
+              attributeName="transform"
+              attributeType="XML"
+              type="rotate"
+              begin="suitcase_parachute_rotate2.end"
+              dur="167ms"
+              from="20"
+              to="18.29"
+              keyTimes="0; 1"
+              calcMode="spline"
+              keySplines="0.33 0 0.67 1"
+              additive="sum"
+    >
+    </animateTransform>
+    <animateTransform xlink:href="#suitcase_parachute"
+              id="suitcase_parachute_rotate4"
+              attributeName="transform"
+              attributeType="XML"
+              type="rotate"
+              begin="suitcase_parachute_rotate3.end"
+              dur="333ms"
+              from="18.29"
+              to="-6.48"
+              keyTimes="0; 1"
+              calcMode="spline"
+              keySplines="0.33 0 0.67 1"
+              additive="sum"
+    >
+    </animateTransform>
+    <animateTransform xlink:href="#suitcase_parachute"
+              id="suitcase_parachute_rotate5"
+              attributeName="transform"
+              attributeType="XML"
+              type="rotate"
+              begin="suitcase_parachute_rotate4.end"
+              dur="150ms"
+              from="-6.48"
+              to="0"
+              keyTimes="0; 1"
+              calcMode="spline"
+              keySplines="0.17 0 0.83 1"
+              additive="sum"
+    >
+    </animateTransform>
+    <animateTransform xlink:href="#cloud_top_suitcase"
+              id="cloud_top_suitcase_animate"
+              attributeName="transform"
+              type="translate"
+              dur="0.4s"
+              fill="freeze"
+              values="65,0; 0,0"
+              calcMode="spline"
+              keySplines="0.33 1 0.68 1"
+    >
+    </animateTransform>
+    <animateTransform xlink:href="#cloud_middle_suitcase"
+              attributeName="transform"
+              type="translate"
+              begin="cloud_top_suitcase_animate.begin"
+              dur="0.4s"
+              fill="freeze"
+              values="85,0; 0,0"
+              calcMode="spline"
+              keySplines="0.33 1 0.68 1"
+    >
+    </animateTransform>
+    <animateTransform xlink:href="#cloud_bottom_suitcase"
+              attributeName="transform"
+              type="translate"
+              begin="cloud_top_suitcase_animate.begin"
+              dur="0.4s"
+              fill="freeze"
+              values="43,0; 0,0"
+              calcMode="spline"
+              keySplines="0.33 1 0.68 1"
+    >
+    </animateTransform>
+    <animateTransform xlink:href="#clouds_suitcase"
+      attributeName="transform"
+              id="clouds_suitcase_animate"
+              type="translate"
+              dur="0.3"
+              fill="freeze"
+              values="0,0; 0,-50"
+              calcMode="spline"
+              keySplines="0.7 0 0.84 0"
+              begin="cloud_top_suitcase_animate.begin + 1s"
+    >
+    </animateTransform>
+    <animate xlink:href="#clouds_suitcase"
+              begin="clouds_suitcase_animate.begin"
+              attributeType="CSS"
+              attributeName="opacity"
+              values="1;0"
+              calcMode="spline"
+              keySplines="0.7 0 0.84 0"
+              dur="0.3s"
+              fill="freeze"
+    >
+    </animate>
+    <animateTransform xlink:href="#leaf_bottom_suitcase"
+              attributeName="transform"
+              type="rotate"
+              values="0; -7; 5; -3; 0"
+              keyTimes="0; 0.3;  0.6; 0.8; 1"
+              calcMode="spline"
+              keySplines="
+              0.37, 0, 0.63, 1;
+              0.37, 0, 0.63, 1;
+              0.37, 0, 0.63, 1;
+              0.37, 0, 0.63, 1"
+              dur="1.8s"
+              fill="freeze"
+              additive="sum"
+    >
+    </animateTransform>
+    <animateTransform xlink:href="#leaf_bottom_suitcase"
+              id="leaf_bottom_suitcase_animate"
+              attributeName="transform"
+              type="rotate"
+              begin="suitcase_parachute_animate.end"
+              values="0; 7; -5; 0"
+              keyTimes="0; 0.3; 0.7; 1"
+              calcMode="spline"
+              keySplines="
+              0.37, 0, 0.63, 1;
+              0.37, 0, 0.63, 1;
+              0.37, 0, 0.63, 1"
+              dur="1.8s"
+              fill="freeze"
+              additive="sum"
+    >
+    </animateTransform>
+    <animateTransform xlink:href="#leaf_bottom_suitcase"
+              attributeName="transform"
+              type="rotate"
+              begin="leaf_bottom_suitcase_animate.end"
+              values="0; -5; 0"
+              keyTimes="0; 0.5; 1"
+              calcMode="spline"
+              keySplines="
+              0.37, 0, 0.63, 1;
+              0.37, 0, 0.63, 1"
+              dur="1s"
+              fill="freeze"
+              additive="sum"
+              repeatCount="indefinite"
+    >
+    </animateTransform>
+    <animateTransform xlink:href="#leaf_top_suitcase"
+              attributeName="transform"
+              type="rotate"
+              values="0; -5; 0"
+              keyTimes="0; 0.5; 1"
+              calcMode="spline"
+              keySplines="
+              0.37, 0, 0.63, 1;
+              0.37, 0, 0.63, 1"
+              dur="1.05s"
+              fill="freeze"
+              additive="sum"
+              repeatCount="indefinite"
+    >
+    </animateTransform>
+    <animate xlink:href="#floor_suitcase"
+              attributeType="XML"
+              attributeName="x1"
+              from="20"
+              to="147"
+              dur="0.3s"
+              begin="0.2s"
+              fill="freeze"
+    >
+    </animate>
+    <animate xlink:href="#floor_suitcase"
+              attributeType="XML"
+              attributeName="x2"
+              from="45"
+              to="283"
+              dur="0.2s"
+              fill="freeze"
+    >
+    </animate>
+  </g>
+
+  <g id="leaf_top_suitcase">
+    <path
+        d="M263.47,206.6a2,2,0,0,1,3.15,2c-1,7-2.07,20.33,4.85,19.4,4.94-.66-16.65-31.53,19.32-38.16a2,2,0,0,1,2.18,2.88c-1.32,2.74-2.83,6.62-2.73,9.9a2,2,0,0,0,3.71,1c4.1-6.15,15.1-17.86,36.59-10.7a2,2,0,0,1,1.35,1.54c0.93,4.8,4.13,23.24-.29,28.72-5.09,6.31-15,4.14-16.18,10.25-1.3,6.91,7.51,4.82,13.42-.22a2,2,0,0,1,3.32,1.64c-0.25,5.45-2.18,14-11.12,18.69-13.78,7.21-23.48-7-25.19-3.88-2.59,4.66,7.94,8.47,13.78,10.18a2,2,0,0,1,.61,3.59c-10.52,7.74-29.13,10.28-37-5.41-8.3-16.59-12.93-12.49-18.19-20.38-5.71-8.57-4.33-22.54,8.38-31.05m29.4,32.47c0.5,2.73,5.2,3.51,8.35,2.94s8.47-3.83,8-6.56-6.62-3.9-9.78-3.33-7.05,4.22-6.55,6.95"
+        fill="#e81a5a"
+        id="path2" />
+    <path
+        d="M263,327.66s-4.91-70.27,5.54-80.72"
+        fill="none"
+        stroke="#e81a5a"
+        stroke-miterlimit="10"
+        stroke-width="2"
+        id="path4" />
+  </g>
+  <g id="suitcase_parachute"
+      transform="translate(-225,-275)"
+      opacity="0">
+    <g
+        id="g37">
+      <path
+          d="m 251.89,328.88 a 3.54,3.54 0 0 0 3.53,-3.53 v -5.07 a 3.53,3.53 0 1 0 -7.06,0 v 5.07 a 3.55,3.55 0 0 0 3.53,3.53"
+          fill="#a67ee5"
+          id="path7" />
+      <path
+          d="m 251.89,328.88 a 3.54,3.54 0 0 0 3.53,-3.53 v -5.07 a 3.53,3.53 0 1 0 -7.06,0 v 5.07 a 3.55,3.55 0 0 0 3.53,3.53 z"
+          fill="none"
+          stroke="#ffffff"
+          stroke-miterlimit="10"
+          stroke-width="2"
+          id="path9" />
+      <path
+          d="m 176.35,328.88 a 3.54,3.54 0 0 0 3.53,-3.53 v -5.07 a 3.53,3.53 0 1 0 -7.06,0 v 5.07 a 3.54,3.54 0 0 0 3.53,3.53"
+          fill="#a67ee5"
+          id="path11" />
+      <path
+          d="m 176.35,328.88 a 3.54,3.54 0 0 0 3.53,-3.53 v -5.07 a 3.53,3.53 0 1 0 -7.06,0 v 5.07 a 3.54,3.54 0 0 0 3.53,3.53 z"
+          fill="none"
+          stroke="#ffffff"
+          stroke-miterlimit="10"
+          stroke-width="2"
+          id="path13" />
+      <path
+          d="m 170.92,320.29 h 74.5 a 11.38,11.38 0 0 0 11.35,-11.35 v -66.08 a 11.38,11.38 0 0 0 -11.35,-11.35 h -74.5 a 11.38,11.38 0 0 0 -11.35,11.35 v 66.08 a 11.38,11.38 0 0 0 11.35,11.35"
+          fill="#a67ee5"
+          id="path15" />
+      <rect
+          x="159.57001"
+          y="231.50999"
+          width="97.199997"
+          height="88.779999"
+          rx="11.35"
+          ry="11.35"
+          fill="none"
+          stroke="#ffffff"
+          stroke-miterlimit="10"
+          stroke-width="2"
+          id="rect17" />
+      <path
+          d="m 199.26,219.15 h 32.4 a 4.09,4.09 0 0 1 4.08,4.08 v 16 a 1.19,1.19 0 0 1 -1.19,1.19 h -2.7 a 1.19,1.19 0 0 1 -1.19,-1.19 v -14.37 a 1.27,1.27 0 0 0 -1.27,-1.27 h -27.86 a 1.27,1.27 0 0 0 -1.27,1.27 v 14.38 a 1.19,1.19 0 0 1 -1.19,1.19 h -2.7 a 1.19,1.19 0 0 1 -1.19,-1.19 v -16 a 4.1,4.1 0 0 1 4.09,-4.08"
+          fill="#a67ee5"
+          id="path19" />
+      <path
+          d="m 199.26,219.15 h 32.4 a 4.09,4.09 0 0 1 4.08,4.08 v 16 a 1.19,1.19 0 0 1 -1.19,1.19 h -2.7 a 1.19,1.19 0 0 1 -1.19,-1.19 v -14.37 a 1.27,1.27 0 0 0 -1.27,-1.27 h -27.86 a 1.27,1.27 0 0 0 -1.27,1.27 v 14.38 a 1.19,1.19 0 0 1 -1.19,1.19 h -2.7 a 1.19,1.19 0 0 1 -1.19,-1.19 v -16 a 4.1,4.1 0 0 1 4.08,-4.09 z"
+          fill="none"
+          stroke="#ffffff"
+          stroke-miterlimit="10"
+          stroke-width="2"
+          id="path21" />
+      <path
+          d="m 185.34,320.29 h 74.5 a 11.38,11.38 0 0 0 11.35,-11.35 v -66.08 a 11.38,11.38 0 0 0 -11.35,-11.35 h -74.5 A 11.38,11.38 0 0 0 174,242.86 v 66.08 a 11.39,11.39 0 0 0 11.35,11.35"
+          fill="#a67ee5"
+          id="path23" />
+      <path
+          d="m 185.34,320.29 h 74.5 a 11.38,11.38 0 0 0 11.35,-11.35 v -66.08 a 11.38,11.38 0 0 0 -11.35,-11.35 h -74.5 A 11.38,11.38 0 0 0 174,242.86 v 66.08 a 11.39,11.39 0 0 0 11.34,11.35 z"
+          fill="none"
+          stroke="#ffffff"
+          stroke-miterlimit="10"
+          stroke-width="2"
+          id="path25" />
+      <line
+          x1="254.22"
+          y1="252.42999"
+          x2="190.97"
+          y2="252.42999"
+          fill="none"
+          stroke="#ffffff"
+          stroke-linecap="round"
+          stroke-miterlimit="10"
+          stroke-width="2"
+          id="line27" />
+      <line
+          x1="254.22"
+          y1="275.89999"
+          x2="190.97"
+          y2="275.89999"
+          fill="none"
+          stroke="#ffffff"
+          stroke-linecap="round"
+          stroke-miterlimit="10"
+          stroke-width="2"
+          id="line29" />
+      <line
+          x1="254.22"
+          y1="299.38"
+          x2="190.97"
+          y2="299.38"
+          fill="none"
+          stroke="#ffffff"
+          stroke-linecap="round"
+          stroke-miterlimit="10"
+          stroke-width="2"
+          id="line31" />
+      <path
+          d="m 168.12,253.68 h 0.67 v 44.46 h -0.67 a 3.53,3.53 0 0 1 -3.52,-3.51 V 257.2 a 3.52,3.52 0 0 1 3.52,-3.52"
+          fill="#a67ee5"
+          id="path33" />
+      <path
+          d="m 168.12,253.68 h 0.67 v 44.46 h -0.67 a 3.53,3.53 0 0 1 -3.52,-3.51 V 257.2 a 3.52,3.52 0 0 1 3.52,-3.52 z"
+          fill="none"
+          stroke="#ffffff"
+          stroke-miterlimit="10"
+          stroke-width="2"
+          id="path35" />
+    </g>
+    <g
+        id="g57">
+      <line
+          x1="215.46001"
+          y1="218.86"
+          x2="159.87"
+          y2="139.03"
+          fill="none"
+          stroke="#ffffff"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          id="line39" />
+      <line
+          x1="215.46001"
+          y1="218.86"
+          x2="196.92999"
+          y2="139.03"
+          fill="none"
+          stroke="#ffffff"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          id="line41" />
+      <line
+          x1="233.99001"
+          y1="139.03"
+          x2="215.46001"
+          y2="218.86"
+          fill="none"
+          stroke="#ffffff"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          id="line43" />
+      <line
+          x1="271.04001"
+          y1="139.03"
+          x2="215.46001"
+          y2="218.86"
+          fill="none"
+          stroke="#ffffff"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          id="line45" />
+      <g
+          id="g55">
+        <path
+            d="M 215.46,83.44 A 55.58,55.58 0 0 1 271,139 c 0,-6.76 -8.3,-12.25 -18.53,-12.25 -10.23,0 -18.31,5.35 -18.52,12 0,0.08 0,0.17 0,0.26 0,-6.76 -8.3,-12.25 -18.53,-12.25 -10.23,0 -18.54,5.49 -18.54,12.25 0,-0.09 0,-0.17 0,-0.26 -0.22,-6.64 -8.42,-12 -18.52,-12 -10.1,0 -18.52,5.49 -18.52,12.25 a 55.58,55.58 0 0 1 55.59,-55.59 m 0,-1.66 a 57.31,57.31 0 0 0 -57.21,57.25 1.66,1.66 0 1 0 3.32,0 c 0,-5.84 7.57,-10.59 16.87,-10.59 9.11,0 16.68,4.66 16.86,10.38 V 139 a 1.66,1.66 0 0 0 3.32,0 c 0,-5.84 7.57,-10.59 16.87,-10.59 9.3,0 16.87,4.75 16.87,10.59 a 1.66,1.66 0 0 0 3.32,0 v -0.21 c 0.18,-5.73 7.74,-10.39 16.86,-10.39 9.3,0 16.87,4.75 16.87,10.59 a 1.66,1.66 0 1 0 3.32,0 57.3,57.3 0 0 0 -57.23,-57.25"
+            fill="#ffffff"
+            id="path47" />
+        <path
+            d="m 215.46,83.44 c 9.92,0 18,20.9 18.54,55.33 0.21,-6.65 8.41,-12 18.52,-12 10.11,0 18.48,5.5 18.48,12.23 A 55.59,55.59 0 0 0 215.41,83.41"
+            fill="#e81a5a"
+            id="path49" />
+        <path
+            d="M 215.45,83.44 A 55.58,55.58 0 0 0 159.87,139 c 0,-6.76 8.3,-12.25 18.52,-12.25 10.22,0 18.3,5.35 18.52,12 0.52,-34.43 8.61,-55.32 18.53,-55.32"
+            fill="#fe6183"
+            id="path51" />
+        <path
+            d="m 215.46,83.44 c -9.93,0 -18,20.9 -18.54,55.32 0,0.09 0,0.17 0,0.26 0,-6.76 8.3,-12.25 18.53,-12.25 10.23,0 18.55,5.5 18.55,12.23 0,-0.09 0,-0.17 0,-0.26 -0.51,-34.43 -8.6,-55.33 -18.52,-55.33"
+            fill="#f7396b"
+            id="path53" />
+      </g>
+    </g>
+  </g>
+  <g id="leaf_bottom_suitcase">
+    <path
+        d="M322.92,283.19a2.15,2.15,0,0,1,.55,2.17c-1.06,3.43-4.58,12.85-12.1,16.34-5.14,2.38-8.33-2.7-10.92.77s2.1,5,6.92,4.31a2.16,2.16,0,0,1,2.14,3.34,14.34,14.34,0,0,1-11.73,6.67c-10.84.27-12.55-11.58-14.57-10.19-2.72,1.89,1.27,6.55,4.39,9.57a2.16,2.16,0,0,1-1.3,3.71c-8.76.84-19.72-3.51-19.8-15-0.08-12.94-4.25-11.8-5.11-18.35-0.91-6.88,3.88-14.88,13.74-16.69a2.16,2.16,0,0,1,2.31,3.11c-2.41,4.73-6,12.6-2.82,12.56,3.46,0-1.58-22.58,28.43-15.26a2.16,2.16,0,0,1,1.09,3.54l-0.1.11a2.16,2.16,0,0,0,2.41,3.45c3.66-1.52,9.16-1.27,16.47,5.84"
+        fill="#fe6183"
+        id="path60" />
+    <path
+        d="M245.13,327.67s3.48-30.11,21.7-30.11"
+        fill="none"
+        stroke="#fe6183"
+        stroke-miterlimit="10"
+        stroke-width="2"
+        id="path62" />
+  </g>
+
+  <line id="floor_suitcase"
+    x1="20"
+    y1="328.88"
+    x2="283.79"
+    y2="328.88"
+    fill="none"
+    stroke="#fff"
+    stroke-linecap="round"
+    stroke-miterlimit="10"
+    stroke-width="2"
+    id="line65"
+  />
+
+  <g id="clouds_suitcase">
+    <g id="cloud_top_suitcase">
+      <path d="M85.22,67.45H57.86a12.4,12.4,0,1,0-24.8,0H15.13" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <line x1="93.48" y1="67.45" x2="115.68" y2="67.45" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <line x1="65.43" y1="77.72" x2="105.21" y2="77.72" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+    <g id="cloud_middle_suitcase">
+      <path d="M235.77,119H216.32a35.49,35.49,0,0,0-68-13.69A26.34,26.34,0,0,0,135.43,102a26.72,26.72,0,0,0-24.8,17H95.48a10.49,10.49,0,0,0,0,21h140.3a10.49,10.49,0,0,0,0-21" fill="#fff"/>
+    </g>
+    <g id="cloud_bottom_suitcase">
+      <line x1="272.13" y1="145.27" x2="311.9" y2="145.27" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <line x1="300.17" y1="135" x2="322.37" y2="135" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+  </g>
+  <path id="suitcase_movement" d="M179,111c24.19-9.24,29.8-15.84,29.42-20.44C207.18,75.43,138.73,51.78,96,84c-2.93,2.21-31.66,24.52-29,54,3.54,39.18,59.83,61.15,75.7,67.35,53.65,20.94,94.43,8.79,101.78,27.18,2.89,7.25.78,19.69-21.48,42.47" fill="none" stroke-miterlimit="10"/>
+</svg>
