@@ -8,11 +8,13 @@ import result from './modules/result.js';
 import form from './modules/form.js';
 import social from './modules/social.js';
 import FullPageScroll from './modules/full-page-scroll';
+
 import loadListener from './modules/load-listener.js';
 import prizesOpener from './modules/prizes-opener.js';
 import {animationPreparer} from './modules/animation.js';
 import {storyListener} from './modules/story-listener';
 import footerAnimation from './modules/footer-animation.js';
+import game from './modules/game.js';
 
 // init modules
 mobileHeight();
@@ -28,6 +30,7 @@ prizesOpener();
 animationPreparer();
 storyListener();
 footerAnimation();
+game();
 
 const fullPageScroll = new FullPageScroll();
 fullPageScroll.init();
