@@ -14,7 +14,7 @@ import prizesOpener from './modules/prizes-opener.js';
 import {animationPreparer} from './modules/animation.js';
 import {storyListener} from './modules/story-listener';
 import footerAnimation from './modules/footer-animation.js';
-import game from './modules/game.js';
+import timer from './modules/timer.js';
 
 // init modules
 mobileHeight();
@@ -30,7 +30,7 @@ prizesOpener();
 animationPreparer();
 storyListener();
 footerAnimation();
-game();
+timer();
 
 const fullPageScroll = new FullPageScroll();
 fullPageScroll.init();
