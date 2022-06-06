@@ -153,6 +153,8 @@
       @media (max-width: $mobile) and (orientation: landscape) {
         width: 10rem;
       }
+
+
     }
   }
 
@@ -169,7 +171,7 @@
     }
 
     .prizes__icon {
-      width: 18.8rem;
+      width: 25rem;
 
       @media (min-width: $stop-scaling) {
         width: 188px;
@@ -265,6 +267,11 @@
     font-weight: 400;
     font-size: 12rem;
     line-height: 0.55;
+    min-width: 7rem;
+
+    .prizes__item--codes & {
+      min-width: 20rem;
+    }
 
     @media (min-width: $stop-scaling) {
       font-size: 120px;
