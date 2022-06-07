@@ -1,4 +1,4 @@
-const storyListener = () => {
+export default () => {
   let pagination = document.querySelector(`.slider__pagination`).children;
 
   const CONTROL_NEXT = document.querySelector(`.slider__control--next`);
@@ -52,8 +52,4 @@ const storyListener = () => {
   };
 
   sliderListener();
-};
-
-export {
-  storyListener
 };
