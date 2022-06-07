@@ -15,6 +15,7 @@ import {animationPreparer} from './modules/animation.js';
 import {storyListener} from './modules/story-listener';
 import footerAnimation from './modules/footer-animation.js';
 import timer from './modules/timer.js';
+import enumerator from "./modules/prize-enumerator.js";
 
 // init modules
 mobileHeight();
@@ -31,6 +32,7 @@ animationPreparer();
 storyListener();
 footerAnimation();
 timer();
+enumerator();
 
 const fullPageScroll = new FullPageScroll();
 fullPageScroll.init();
