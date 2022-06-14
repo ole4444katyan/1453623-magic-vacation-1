@@ -11,11 +11,12 @@ import FullPageScroll from './modules/full-page-scroll';
 
 import loadListener from './modules/load-listener.js';
 import prizesOpener from './modules/prizes-opener.js';
-import {animationPreparer} from './modules/animation.js';
-import {storyListener} from './modules/story-listener';
-import footerAnimation from './modules/footer-animation.js';
-import timer from './modules/timer.js';
-import enumerator from "./modules/prize-enumerator.js";
+import {animationPreparer} from './modules/animations/letter-animation.js';
+import storyListener from './modules/story-listener';
+import footerAnimation from './modules/animations/footer-animation.js';
+import timer from './modules/animations/timer.js';
+import enumerator from "./modules/animations/prize-enumerator.js";
+import drawScene from "./modules/animations/main.js";
 
 // init modules
 mobileHeight();
@@ -33,6 +34,7 @@ storyListener();
 footerAnimation();
 timer();
 enumerator();
+drawScene();
 
 const fullPageScroll = new FullPageScroll();
 fullPageScroll.init();
