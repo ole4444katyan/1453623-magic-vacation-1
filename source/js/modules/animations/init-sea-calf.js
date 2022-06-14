@@ -1,4 +1,4 @@
-import DrawScene from "./main-win-sea-calf.js";
+import DrawScene2DSeaCalf from "./main-win-sea-calf.js";
 export default () => {
 
   let config = {
@@ -11,7 +11,7 @@ export default () => {
   let observer = new MutationObserver((mutations) => {
     mutations.forEach(() => {
       if (screen.classList.contains(`screen--show`)) {
-        const scene = new DrawScene();
+        const scene = new DrawScene2DSeaCalf();
       }
     });
   });

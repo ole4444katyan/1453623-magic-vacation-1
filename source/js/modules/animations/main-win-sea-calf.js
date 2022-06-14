@@ -1,5 +1,5 @@
 // export default () => {
-import utilScene from './util-class.js';
+import util2DScene from './util-2d-class.js';
 import Animation from "./animation-class.js";
 import _ from './utils-bezie.js';
 
@@ -101,7 +101,7 @@ const IMAGES_URLS = Object.freeze({
 });
 
 
-export default class initialScene extends utilScene {
+export default class Scene2DSeaCalf extends util2DScene {
   constructor() {
     const canvas = document.getElementById(`sea-calf-scene`);
 

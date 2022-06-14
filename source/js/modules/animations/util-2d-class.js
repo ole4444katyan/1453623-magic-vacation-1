@@ -1,4 +1,4 @@
-export default class utilScene {
+export default class util2DScene {
   constructor(options) {
     this.canvas = options.canvas;
     this.ctx = this.canvas.getContext(`2d`);
