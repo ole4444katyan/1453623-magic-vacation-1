@@ -111,10 +111,18 @@ export default class utilScene {
       if (Object.prototype.hasOwnProperty.call(this.objects, name)) {
         const object = this.objects[name];
 
+        if (object.before && typeof object.before === `function`) {
+          object.before();
+        }
+
         this.draw(
             this.images[object.imageId],
             object
         );
+
+        if (object.after && typeof object.after === `function`) {
+          object.after();
+        }
       }
     }
   }
