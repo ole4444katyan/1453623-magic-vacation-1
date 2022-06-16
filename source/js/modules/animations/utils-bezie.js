@@ -56,6 +56,16 @@ function easeOutElastic(x) {
   }
 }
 
+function easeOutQuint(x) {
+  if (x === 0) {
+    return 0;
+  } else if (x === 1) {
+    return 1;
+  } else {
+    return 1 - Math.pow(1 - x, 5);
+  }
+}
+
 
 const _ = Object.freeze({
   easeLinear,
@@ -64,7 +74,8 @@ const _ = Object.freeze({
   easeInExpo,
   easeOutExpo,
   easeInElastic,
-  easeOutElastic
+  easeOutElastic,
+  easeOutQuint
 });
 
 

@@ -17,6 +17,7 @@ import footerAnimation from './modules/animations/footer-animation.js';
 import timer from './modules/animations/timer.js';
 import enumerator from "./modules/animations/prize-enumerator.js";
 import drawScene2DSeaCalf from "./modules/animations/init-sea-calf.js";
+import drawScene2DCrocodile from "./modules/animations/init-crocodile.js";
 
 // init modules
 mobileHeight();
@@ -35,6 +36,7 @@ footerAnimation();
 timer();
 enumerator();
 drawScene2DSeaCalf();
+drawScene2DCrocodile();
 
 const fullPageScroll = new FullPageScroll();
 fullPageScroll.init();
